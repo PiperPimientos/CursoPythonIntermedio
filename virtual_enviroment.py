@@ -34,3 +34,16 @@ Crearemos una carpeta para nuestro proyecto ejemplo, que en este caso será la c
 # deactivate
 # Crear un alias en linux/mac:
 # alias nombre-alias="comando"
+
+# Aquí les dejo los pasos para crear un alias permanente en Linux Ubuntu:
+# .
+# Para hacerlo en este sistema operativo, necesitamos que cada que la terminal cargue, el alias sea leído, para ello, la terminal tiene un archivo llamado .bashrc que contiene la configuración inicial, y usualmente se encuentra en nuestro home, por lo que hacemos lo siguiente:
+# .
+# 1.	Ejecutar sudo nano ~/.bashrc
+# 2.	Ir al final del archivo
+# 3.	Agregar el comando: alias avenv='source venv/bin/activate'
+# 4.	Guardar presionando ctrl + o y luego salir con ctrl + x
+# 5.	Reejecutar la configuración de la terminal: source ~/.bashrc
+# 6.	Activar el entorno vitual avenv
+# .
+# De esa forma persistirá siempre, ya que el alias se guarda dentro del archivo de configuración de la terminal 
