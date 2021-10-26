@@ -128,8 +128,7 @@ def run():
         print("Adivina la palabra")
         for element in word_list_underscores:
             print(element + " ", end=" ")
-        print(IMAGES[attemps])
-        letter = input("Elige una letra").strip().upper()
+        letter = input("Elige una letra: ").strip().upper()
         assert letter.isalpha(), "Solo puedes ingresar letras"
 
 
